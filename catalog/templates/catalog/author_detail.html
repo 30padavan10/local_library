@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ author.first_name }} {{author.last_name}}</h1>
+  <ul>
+    <li>{{ author.date_of_birth }}</li>
+    {% if author.date_of_death %}
+      <li>{{ author.date_of_death }}</li>
+    {% else %}
+      <li>---</li>
+    {%endif%}
+    <h1>Выпущенные книги:</h1>
+    {% for book in author.book_set.all %}
+      <li>{{book}}</li>
+    {%endfor%}
+  </ul>
+{% endblock %}
