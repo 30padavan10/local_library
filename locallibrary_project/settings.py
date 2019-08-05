@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'c)l@a&x9(%odiiaw%*x99_+*vcucoh
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) ) #  Значение DEBUG будет True по умолчанию и станет False, в том случае, если переменная окружения DJANGO_DEBUG будет проинициализирована пустой строкой, то есть, DJANGO_DEBUG=''
 
 
-ALLOWED_HOSTS = ['192.168.57.10']
+ALLOWED_HOSTS = ['intense-tundra-21405.herokuapp.com', '192.168.57.10']
 
 
 # Application definition
